@@ -10,7 +10,7 @@
     z-index: 9999;
     margin: auto;
     width: 85%;
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 img{
     width:5rem;
