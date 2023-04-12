@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { CriptomonedasService } from '../services/criptomonredas.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { Monedas } from '../models/Monedas.model';
+import {MatInputModule} from '@angular/material/input';
+import { ConfirmDialogComponent } from './../shared/confirm-dialog/confirm-dialog.component';
+import { MatDialog } from '@angular/material/dialog';
+
 
 
 @Component({
@@ -14,7 +18,7 @@ export class MainPageComponent implements OnInit {
   dataSource: MatTableDataSource<Monedas> = new MatTableDataSource<Monedas>()
   displayedColumns : string[] = ['nombre Moneda' ,'stock','valor', 'trader']
   
-  constructor(private criptoMonedasService: CriptomonedasService) { }
+  constructor(private criptoMonedasService: CriptomonedasService,private matDialog:MatDialog) { }
 
   ngOnInit(): void  {
   
@@ -26,5 +30,7 @@ export class MainPageComponent implements OnInit {
     )
 
   }
-
+  open(){
+    this.matDialog.open(ConfirmDialogComponent)
+  }
 }
