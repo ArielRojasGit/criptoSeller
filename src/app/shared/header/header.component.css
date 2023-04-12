@@ -1,0 +1,22 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem .5rem;
+    background-color: red;
+    position: sticky;
+    top: 3%;
+    z-index: 9999;
+    margin: auto;
+    width: 85%;
+    border-radius: 25px;
+}
+img{
+    width:5rem;
+    height:5rem;
+
+}
+#logo {
+    margin-left: 50%;
+}

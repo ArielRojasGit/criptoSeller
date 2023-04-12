@@ -1,0 +1,40 @@
+
+<div class="contenedor">
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 col-xs-12">
+
+        <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="nombre Moneda">
+        <th mat-header-cell *matHeaderCellDef> token </th>
+        <td mat-cell *matCellDef="let element"> {{element.cripto_name}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="stock">
+        <th mat-header-cell *matHeaderCellDef> stock </th>
+        <td mat-cell *matCellDef="let element"> {{element.stock}} </td>
+        </ng-container>
+    
+        <!-- Weight Column -->
+        <ng-container matColumnDef="valor">
+        <th mat-header-cell *matHeaderCellDef> valor </th>
+        <td mat-cell *matCellDef="let element"> {{element.value}} </td>
+        </ng-container>
+
+
+
+
+        <ng-container matColumnDef="trader">
+            <th mat-header-cell *matHeaderCellDef> trader </th>
+            
+            <td mat-cell *matCellDef="let element"> <button>boton</button> </td>
+            </ng-container>
+        
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>

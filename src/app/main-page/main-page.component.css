@@ -1,0 +1,28 @@
+/* .container{
+    margin-left:30%;
+    margin-top: 10%;
+    background-color: blue;
+    width: 50%;
+} */
+
+
+
+table { 
+    width: 80%;
+    margin:1rem auto;
+    background-color:antiquewhite;
+   
+ }
+
+ .contenedor {
+   
+    display: flex;
+    flex-direction: column;
+    margin:2rem auto;
+    margin-top: 10%;
+    max-width: 10% auto;
+    max-height:100%;
+    box-shadow: -1px 3px 66px 0px rgba(0,0,0,0.75);
+    padding: 2rem;
+   
+}  

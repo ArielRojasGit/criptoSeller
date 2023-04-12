@@ -1,0 +1,70 @@
+<div class = "container">
+    <mat-card>
+        <mat-card-header></mat-card-header>
+
+        <mat-card-content>
+            <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)"> <!--#myForm="ngForm" lo que hace el hashtag, poner un id y despues indicmaos el tipo de datos que va a contener la interfaz de ese id-->
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput ngModel name="email" placeholder="Ex. pat@example.com">
+                    
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>password</mat-label>
+                    <input type="password" matInput ngModel name="password">
+                    
+                </mat-form-field>
+                
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<!-- ************************************************************************************************************ -->
+
+
+<div class= "container">
+<p style="margin-left:10% ;">
+    Si lo prefieres date de alta
+</p>
+<mat-card>
+    <mat-card-header></mat-card-header>
+
+    <mat-card-content>
+        <form #myForm2="ngForm" (ngSubmit)="signUping(myForm2)"> <!--#myForm="ngForm" lo que hace es el hashtag, poner un id y despues indicmaos el tipo de datos que va a contener la interfaz de ese id-->
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput ngModel name="email" placeholder="Ex. pat@example.com">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>password</mat-label>
+                <input type="password" matInput ngModel name="password">   
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>birth_date</mat-label>
+                <input type="text" matInput ngModel name="birth_date">   
+            </mat-form-field>
+            
+            <mat-form-field class="example-full-width">
+                <mat-label>amount</mat-label>
+                <input type="number" matInput ngModel name="amount">   
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>full_name</mat-label>
+                <input type="text" matInput ngModel name="full_name">   
+            </mat-form-field>
+
+           
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </mat-card-content>
+</mat-card>
+</div >
+
