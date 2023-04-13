@@ -5,7 +5,7 @@ import { MainPageComponent } from './main-page.component';
 import { MainPageRoutingModule } from './main-page-routing.module';
 import { MatTableModule } from '@angular/material/table';
 import {MatDialogModule} from '@angular/material/dialog';
-import { MatCardModule } from '@angular/material/card';
+import { HeaderComponent } from '../shared/header/header.component';
 
 
 
@@ -14,13 +14,15 @@ import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [
     MainPageComponent,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
     MainPageRoutingModule,
     MatTableModule,
     MatDialogModule,
+
 
   ]
 })
